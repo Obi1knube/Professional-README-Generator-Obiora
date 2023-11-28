@@ -121,3 +121,51 @@ You are required to submit the following for review:
 ---
 
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+Pseudocode for this project 
+1. Prompt the user for the following information:
+   - Project title
+   - Description
+   - Installation instructions
+   - Usage information
+   - Contribution guidelines
+   - Test instructions
+   - License selection
+   - GitHub username
+   - Email address
+
+2. Generate the README.md file with the following sections:
+   - Title: Display the project title
+   - Description: Display the project description
+   - Table of Contents: Display links to different sections of the README
+   - Installation: Display the installation instructions
+   - Usage: Display the usage information
+   - License: Display the selected license badge and explanation
+   - Contributing: Display the contribution guidelines
+   - Tests: Display the test instructions
+   - Questions: Display the GitHub username with a link to the profile and email address with instructions to contact
+
+3. Add functionality to make the Table of Contents links clickable, scrolling to the corresponding section in the README.
+
+4. Save the generated README.md file.
+
+5. Provide a way for the user to input their preferred license from a list of options.
+
+6. Add the selected license badge near the top of the README and include a notice in the License section explaining the coverage of the application.
+
+7. Add validation to ensure all required information is provided by the user.
+
+8. Test the application by running it and verifying the generated README.md file.
+
+9. Provide a walkthrough video demonstrating the functionality of the application.
+
+10. Update the README of the project with the link to the walkthrough video.
+
+11. Submit the project for review.
+
+This pseudo code outlines the steps to develop the command-line application that generates a professional README.md file based on user input. You can use this as a guide to implement the functionality in your chosen programming language.
+
+
+
