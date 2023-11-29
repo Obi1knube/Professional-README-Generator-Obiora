@@ -1,27 +1,5 @@
-
-const generateMarkdown = (title, description, table-of-content, installation, usage, license,contributing, tests, questions) =>
-    
-`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Professional README Generator</title>
-</head>
-<body>
-<header class="p-5 m-4 header bg-light">
-//copy and paste cards styling  code from bootstrap website 
- 
-</header>
-    
-</body>
-</html>
-    
-
-`
-
+const generateMarkdown = (data) => {
+  const { title, description, installation, usage, license, contributing, tests, questions } = data;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -45,10 +23,8 @@ const renderLicenseBadge = (license) => {
   }
 };
 
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-//function renderLicenseLink(license) {}
 
 const renderLicenseLink =(license)=>{
    //check if there is license
@@ -68,8 +44,7 @@ const renderLicenseLink =(license)=>{
     } else {
       return '';
   }
-}
-
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -77,22 +52,16 @@ const renderLicenseLink =(license)=>{
 
 const renderLicenseSection = (license) => {
   if (license) {
-    return `
-## License
-
-This application is covered under the ${license} license.`
+    return `## License\n\nThis application is covered under the ${license} license.`;
   } else {
     return '';
   }
 };
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  console.log(data)
-
+// TODO: Create a function to generate markdown for README {
+  return `# ${title}
+  
 ## Description
-${data.description}
+${description}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -103,23 +72,24 @@ ${data.description}
 - [Questions](#questions)
 
 ## Installation
-${data.installation}
+${installation}
 
 ## Usage
-${data.usage}
+${usage}
 
 ## License
-${data.license}
+${renderLicenseBadge(license)}
+${renderLicenseSection(license)}
+${renderLicenseLink(license)}
 
 ## Contributing
-${data.contributing}
+${contributing}
 
 ## Tests
-${data.tests}
+${tests}
 
 ## Questions
-If you have any questions, you can reach out to me via email at ${data.email}. You can also find more information about me and my other projects on my GitHub profile: [${data.username}](https://github.com/${data.username}).
+If you have any questions, you can reach out to me via email at ${questions}. You can also find more information about me and my other projects on my GitHub profile: [${data.username}](https://github.com/${data.username}).
 `;
-}
-
+};
 module.exports = generateMarkdown;
