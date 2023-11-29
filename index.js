@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs')
-
+const generateMarkdown= require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions =[
@@ -79,15 +79,33 @@ function writeToFile(fileName, data) {
 function init() {
     // Add your initialization code here
     console.log('Initializing the app...');
-    // ...
+
+    // copied prompt instruction from inquire-npm-documentation
+    inquirer
+    .prompt(questions)
+    .then((answers) => {
+      // Use user feedback for... whatever!!
+      console.log(answers);
+
+      //write user feedback as a file README.md
+writeToFile('./utils/README.md',generateMarkdown(answers));
+    })
+    .catch((error) => {
+      if (error.isTtyError) {
+        // Prompt couldn't be rendered in the current environment
+      } else {
+        // Something else went wrong
+      }
+    });
+
   }
   
-// Function call to initialize app
-module.exports = {
-    questions,
-    writeToFile,
-    init
-  };
+// // Function call to initialize app
+// module.exports = {
+//     questions,
+//     writeToFile,
+//     init
+//   };
 
 
 init();
