@@ -1,5 +1,5 @@
 const generateMarkdown = (data) => {
-  const { title, description, installation, usage, license, contributing, tests, questions } = data;
+  const { title, description, installation, usage, license, contribution, tests, questions, email,username } = data;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -58,7 +58,11 @@ const renderLicenseSection = (license) => {
   }
 };
 // TODO: Create a function to generate markdown for README {
-  return `# ${title}
+
+  return `
+  
+##  Title
+   ${title}
   
 ## Description
 ${description}
@@ -67,7 +71,7 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributing](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -83,13 +87,17 @@ ${renderLicenseSection(license)}
 ${renderLicenseLink(license)}
 
 ## Contributing
-${contributing}
+${contribution}
 
 ## Tests
 ${tests}
 
 ## Questions
-If you have any questions, you can reach out to me via email at ${questions}. You can also find more information about me and my other projects on my GitHub profile: [${data.username}](https://github.com/${data.username}).
+${questions}
+
+
+If you have any questions, you can reach out to me via email at ${email}. You can also find more information about me and my other projects on my GitHub profile: [${username}](https://github.com/${username}).
 `;
 };
+
 module.exports = generateMarkdown;

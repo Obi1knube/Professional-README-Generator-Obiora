@@ -168,4 +168,6 @@ Pseudocode for this project
 This pseudo code outlines the steps to develop the command-line application that generates a professional README.md file based on user input. You can use this as a guide to implement the functionality in your chosen programming language.
 
 
+Here is a link to walkthrough video: https://drive.google.com/file/d/1kpw_aQul_s7oa2NdZyH8_xHAcy5tDfXr/view
+
 

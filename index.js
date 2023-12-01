@@ -35,7 +35,7 @@ const questions =[
     },
     {
     type: 'input',
-    name:'test',
+    name:'tests',
     message:'Add Test instructions',
   },
   {
@@ -53,7 +53,7 @@ message:'Add GitHub username',
 {
 type: 'input',
 name:'email',
-message:'Add Email address',
+message:'Add Your Email address',
 
 }
   
@@ -71,23 +71,19 @@ function writeToFile(fileName, data) {
     console.log('README file created successfully!');
   });
 }
-
-
-
-// TODO: Create a function to initialize app
-
+ // Function call to initialize app
 function init() {
-    // Add your initialization code here
-    console.log('Initializing the app...');
 
-    // copied prompt instruction from inquire-npm-documentation
+  console.log('Initializing the app...');
+
+    // modified prompt instruction coppied from inquire-npm-documentation
     inquirer
     .prompt(questions)
     .then((answers) => {
       // Use user feedback for... whatever!!
       console.log(answers);
 
-      //write user feedback as a file README.md
+      //write user feedback as a file README.md in the util-Folder
 writeToFile('./utils/README.md',generateMarkdown(answers));
     })
     .catch((error) => {
@@ -100,13 +96,7 @@ writeToFile('./utils/README.md',generateMarkdown(answers));
 
   }
   
-// // Function call to initialize app
-// module.exports = {
-//     questions,
-//     writeToFile,
-//     init
-//   };
-
+//CALLBack
 
 init();
 
