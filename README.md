@@ -59,71 +59,10 @@ Here are some guidelines to help you get started:
 
 * Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
 
-## Grading Requirements
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+This pseudo code outlines the steps to develop the command-line application that generates a professional README.md file based on user input. I have used it as a guide to implement the functionality in your javaScript Programminglanguage.
 
-This Challenge is graded based on the following criteria: 
-
-### Deliverables: 20%
-
-* A sample README generated using the application must be submitted.
-
-* Your GitHub repository containing your application code.
-
-### Walkthrough Video: 27%
-
-* A walkthrough video that demonstrates the functionality of the README generator must be submitted, and a link to the video should be included in your README file.
-
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality README with description and a link to walkthrough video.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video demonstrating the functionality of the application.
-
-* A sample README.md file for a project repository generated using your application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
-
-
+## Pseudocode
 Pseudocode for this project 
 1. Prompt the user for the following information:
    - Project title
@@ -165,9 +104,10 @@ Pseudocode for this project
 
 11. Submit the project for review.
 
-This pseudo code outlines the steps to develop the command-line application that generates a professional README.md file based on user input. You can use this as a guide to implement the functionality in your chosen programming language.
+## Results
 
+Now that all the steps has been followed, the programm has been debu
 
 Here is a link to walkthrough video: https://drive.google.com/file/d/1kpw_aQul_s7oa2NdZyH8_xHAcy5tDfXr/view
 
-
+The codes can be viewed here: https://github.com/Obi1knube/Professional-README-Generator-Obiora
