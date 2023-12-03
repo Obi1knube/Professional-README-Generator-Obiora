@@ -1,9 +1,17 @@
+/* 
+  The code defines a function generateMarkdown that takes in a data object as input.
+  The data object contains various properties such as title, description, installation, etc.,
+  which are destuctured from the data object.
+*/
 const generateMarkdown = (data) => {
   const { title, description, installation, usage, license, contribution, tests, questions, email,username } = data;
 
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+/* 
+  renderLicenseBadge is the no. 1 helper function, It takes a license value  and returns appropraite license badge
+    based on the value. It uses a swtich statement  to determine the badge URL based on the license value,
+    If there is no license, it returns an empty string
+*/
 const renderLicenseBadge = (license) => {
   if (license) {
     // Return the appropriate license badge based on the license value
@@ -24,8 +32,12 @@ const renderLicenseBadge = (license) => {
 };
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
+/*
+renderLicenseLink is the no.2 helper function. This function takes in a license value,
+and returns the approprite license link based on the value.
+It uses the switch statement to determine the license link URL based on the license value.
+If there is no license, return an empty string
+*/
 const renderLicenseLink =(license)=>{
    //check if there is license
   if (license){
@@ -47,9 +59,11 @@ const renderLicenseLink =(license)=>{
 };
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
+/* 
+  renderLicenseSection is the No. 3 helper function. It takes in the license value 
+  and returns the licencse setion of the README. It includes the license badg, Licence cotice and licence link
+  If there is no license, return an empty string
+*/
 const renderLicenseSection = (license) => {
   if (license) {
     return `## License\n\nThis application is covered under the ${license} license.`;
@@ -58,6 +72,11 @@ const renderLicenseSection = (license) => {
   }
 };
 // TODO: Create a function to generate markdown for README {
+  /*
+  The generateMarkdown function returns a string that represents the content of the README file.
+  it includes the Title, description, table of contents, installation, usage, license setion (including the badge, notice and link),
+  contribution guideline,etc.
+  */
 
   return `
   
@@ -67,13 +86,19 @@ const renderLicenseSection = (license) => {
 ## Description
 ${description}
 
+
+
 ## Table of Contents
+
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
+
+
 
 ## Installation
 ${installation}
@@ -100,4 +125,5 @@ If you have any questions, you can reach out to me via email at ${email}. You ca
 `;
 };
 
+//The generateMarkdown function is exported so i can be used in other modules
 module.exports = generateMarkdown;

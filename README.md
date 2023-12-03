@@ -106,8 +106,6 @@ Pseudocode for this project
 
 ## Results
 
-Now that all the steps has been followed, the programm has been debu
+Now that all the steps has been followed, the programm has been developed and a waltkthrough video can be viewed at: https://drive.google.com/file/d/1kpw_aQul_s7oa2NdZyH8_xHAcy5tDfXr/view
 
-Here is a link to walkthrough video: https://drive.google.com/file/d/1kpw_aQul_s7oa2NdZyH8_xHAcy5tDfXr/view
-
-The codes can be viewed here: https://github.com/Obi1knube/Professional-README-Generator-Obiora
+The codes are available at: https://github.com/Obi1knube/Professional-README-Generator-Obiora

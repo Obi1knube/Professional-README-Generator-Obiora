@@ -1,12 +1,16 @@
 
   
 ##  Title
-   Professional README Generator
+   Obino
   
 ## Description
-This APP generates a readme file, based on user's response.
+Aham efuna
+
+
 
 ## Table of Contents
+
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -14,11 +18,13 @@ This APP generates a readme file, based on user's response.
 - [Tests](#tests)
 - [Questions](#questions)
 
+
+
 ## Installation
-make sure to install Node and inquierer package.
+we dey run am so
 
 ## Usage
-Use as described in License Terms and Conditions.
+useam as you like
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -28,13 +34,13 @@ This application is covered under the MIT license.
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contributing
-Give credit to Authurs.
+Na small small we dey contribute
 
 ## Tests
-Use the command : node index.js, to execute program
+Oya make you test am well well ooh
 
 ## Questions
 undefined
 
 
-If you have any questions, you can reach out to me via email at obi1knube@hotmail.com. You can also find more information about me and my other projects on my GitHub profile: [Obi1knube](https://github.com/Obi1knube).
+If you have any questions, you can reach out to me via email at obi1knub@hotmail.com. You can also find more information about me and my other projects on my GitHub profile: [Obi1knube](https://github.com/Obi1knube).

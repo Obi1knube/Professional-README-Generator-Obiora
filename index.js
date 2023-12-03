@@ -1,9 +1,12 @@
-// TODO: Include packages needed for this application
-const inquirer = require('inquirer')
-const fs = require('fs')
-const generateMarkdown= require('./utils/generateMarkdown')
+const inquirer = require('inquirer') // This line imports inquirer package, which is used to prompt the User with questions.
+const fs = require('fs') // This line imports the fs Module,which is used to write the generated READMEfile to the file system.
+const generateMarkdown= require('./utils/generateMarkdown') //This line imports GeneratMarkdown function fron the generateMarkdown.js
 
 // TODO: Create an array of questions for user input
+/* 
+  This is an array of objects that defines the questions to be asked to the user. 
+  Each object represents a question, and contains properties like type, name and message
+*/
 const questions =[
     {
       type: 'input',
@@ -59,9 +62,11 @@ message:'Add Your Email address',
   
   ];
 
-
 // TODO: Create a function to write README file
-
+  /* 
+  funtion writeToFile(fileName, data){ ... }  the funtion takes  a fileName and data parameter,
+  and uses the fs.WriteFile method  to write the data to the specified fileName.
+  */
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -72,11 +77,16 @@ function writeToFile(fileName, data) {
   });
 }
  // Function call to initialize app
+  /*
+  function init(){ ... } is the entry point  of the application. it logs a message to indicate 
+  that the app is initialising and then prompts the user  with the questions using inquirer.prompt.
+  The user's answers are then logged and passed to writeToFile function to generate the README file.
+ */
 function init() {
 
   console.log('Initializing the app...');
 
-    // modified prompt instruction coppied from inquire-npm-documentation
+    // modified version of inquirer prompt instruction, copied from URL inquire-npm-documentation
     inquirer
     .prompt(questions)
     .then((answers) => {
@@ -96,10 +106,4 @@ writeToFile('./utils/README.md',generateMarkdown(answers));
 
   }
   
-//CALLBack
-
-init();
-
-
-
-
+init();  //this line calls the init function to start the application.
