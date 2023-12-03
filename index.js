@@ -1,3 +1,7 @@
+/*
+This code is a Node.js application that prompts the user with a series of questions using the inquirer package
+the user's responses are then used to generate a README.md file, using the generateMarkdown function.
+*/
 const inquirer = require('inquirer') // This line imports inquirer package, which is used to prompt the User with questions.
 const fs = require('fs') // This line imports the fs Module,which is used to write the generated READMEfile to the file system.
 const generateMarkdown= require('./utils/generateMarkdown') //This line imports GeneratMarkdown function fron the generateMarkdown.js
